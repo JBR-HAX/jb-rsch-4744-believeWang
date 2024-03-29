@@ -35,3 +35,10 @@ Content-Type: application/json
     "steps": 2
   }
 ]
+###
+//@no-log
+POST http://localhost:8080/locations
+Content-Type: application/json
+
+[{"direction":"EAST","steps":1},{"direction":"NORTH","steps":3},{"direction":"EAST","steps":3},
+  {"direction":"SOUTH","steps":5},{"direction":"WEST","steps":2}]
